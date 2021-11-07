@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christiana Morales</title>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://www.clipartmax.com/png/small/1-14104_blue-smiley-face-svg-clip-arts-594-x-595-px-green-smiley.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Christiana Morales</title>
 </head>
 
 <body>
@@ -32,11 +34,13 @@
     </header>
 
     <!-- about me -->
-    <section id="about-me">
+    <section id="about-me" class="about-me">
         <h2>About Me</h2>
         <div>
-            <img src="assets/images/Avatar-Chris.jpg" alt="cartoon avatar of Christiana">
-            <h3>Christiana Morales</h3>
+            <div class="about-me-img">
+                <img src="assets/images/Avatar-Chris.png" alt="cartoon avatar of Christiana" class="avatar">
+            </div>
+            <h3>My name is Christiana Sullivan Morales</h3>
             <p>
                 I am an artist seeking to enter the world of web development. As an artist, I am passionate about
                 creating things from scratch, and I see websites as a merging of this passion with my passion for
@@ -48,21 +52,21 @@
     </section>
 
     <!-- my work -->
-    <section id="my-work">
+    <section id="my-work" class="my-work">
         <h2>My Work</h2>
         <div>
-            <article>
-                <img src="" alt="">
+            <article class="project-card">
+                <img src="https://media.istockphoto.com/photos/search-picture-id116724690" alt="" class="project-photo">
                 <h4>RUN BUDDY · WEBSITE</h4>
                 <p>HTML · CSS</p>
             </article>
-            <article>
-                <img src="" alt="">
+            <article class="project-card">
+                <img src="https://media.istockphoto.com/photos/search-picture-id116724690" alt="" class="project-photo">
                 <h4>HORISEON · WEBSITE</h4>
                 <p>HTML · CSS</p>
             </article>
-            <article>
-                <img src="" alt="">
+            <article class="project-card">
+                <img src="https://media.istockphoto.com/photos/search-picture-id116724690" alt="" class="project-photo">
                 <h4>GREEN DAY TRIBUTE · WEBSITE</h4>
                 <p>HTML · CSS</p>
             </article>
@@ -70,33 +74,33 @@
     </section>
 
     <!-- conatact me -->
-    <section id="contact-me">
+    <section id="contact-me" class="contact-me">
         <h2>Contact Me</h2>
         <div>
-            <form action="">
-                <label for="name">Name</label>
+            <form action="" class="contact-form">
+                <label for="name">Name:</label>
                 <input type="text" name="name" id="name">
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="email" name="email" id="email">
-                <label for="subject">Subject</label>
+                <label for="subject">Subject:</label>
                 <input type="text" name="subject" id="subject">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="4"></textarea>
             </form>
-            <ul>
+            <ul class="contact-links">
                 <li>
-                    <a href="">
-                        <img src="assets/images/github-icon.png" alt="GitHub icon">
+                    <a href="https://github.com/NicaVulcan">
+                        <img src="assets/images/github-icon.png" class="contact-icon" alt="GitHub icon">
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="assets/images/linkedin-logo.png" alt="LinkedIn icon">
+                    <a href="https://www.linkedin.com/in/csullivanmorales/">
+                        <img src="assets/images/linkedin-logo.png" class="contact-icon" alt="LinkedIn icon">
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img src="assets/images/codepen-icon.png" alt="Codepen icon">
+                    <a href="https://codepen.io/NicaVulcan">
+                        <img src="assets/images/codepen-icon.png" class="contact-icon" alt="Codepen icon">
                     </a>
                 </li>
             </ul>

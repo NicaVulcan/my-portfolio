@@ -1,3 +1,107 @@
-*{
-    font-family: "Advent Pro", sans-serif;
+/* general style */
+:root {
+    purple: --#7400b8;
 }
+body {
+    font-family: "Advent Pro", sans-serif;
+    background: linear-gradient(#65d7e9, #7400b8);
+    color: white;
+}
+h2 {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: 100%;
+    color: #7400b8;
+}
+
+/* header style */
+header {
+    text-align: center;
+}
+header h1 {
+    font-size: 60px;
+    justify-content: center;
+    margin: 10px auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+}
+nav ul li {
+    list-style: none;
+    background-color: #7400b8;
+    width: 100%;
+    margin: 2px auto;
+    padding: 2px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* about me style */
+.about-me div {
+    justify-content: center;
+    text-align: center;
+}
+.avatar {
+    width: 100%;
+}
+.about-me div h3 {
+    font-size: 25px;
+    margin: 15px auto;
+}
+.about-me div p {
+    font-size: 17px;
+}
+
+/* my work style */
+.project-card img {
+    width: 100%;
+}
+.project-card h4 {
+    font-size: 19px;
+    margin: 10px auto;
+}
+.project-card p {
+    font-size: 17px;
+    margin: 10px auto;
+}
+
+
+/* contact me */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-form label {
+    padding: 5px;
+    font-size: 20px;
+}
+.contact-form input, .contact-form textarea {
+    width: 80%;
+    font-size: 18px;
+}
+.contact-links {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.contact-links li {
+    display: inline;
+    list-style: none;
+    align-items: center;
+}
+.contact-icon {
+    height: 80px;
+    width: 80px;
+    padding: 0 5px;
+}
+
+
