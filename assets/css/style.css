@@ -1,10 +1,11 @@
 /* general style */
 :root {
-    purple: --#7400b8;
+    --purple: #7400b8;
+    --cyan: #65d7e9;
 }
 body {
     font-family: "Advent Pro", sans-serif;
-    background: linear-gradient(#65d7e9, #7400b8);
+    background: linear-gradient(var(--cyan), var(--purple));
     color: white;
 }
 h2 {
@@ -12,8 +13,9 @@ h2 {
     padding: 20px 0;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     width: 100%;
-    color: #7400b8;
+    color: var(--purple);
 }
+
 
 /* header style */
 header {
@@ -32,7 +34,7 @@ nav ul {
 }
 nav ul li {
     list-style: none;
-    background-color: #7400b8;
+    background-color: var(--purple);
     width: 100%;
     margin: 2px auto;
     padding: 2px;
@@ -42,6 +44,13 @@ nav ul li a {
     font-size: 20px;
     color: white;
 }
+nav ul li:hover {
+    box-shadow: 0 0 5px black;
+}
+nav ul li:hover a {
+    color: var(--cyan);
+}
+
 
 /* about me style */
 .about-me div {
@@ -59,9 +68,13 @@ nav ul li a {
     font-size: 17px;
 }
 
+
 /* my work style */
-.project-card img {
+.project-card a img {
     width: 100%;
+}
+.project-card a img:hover {
+    box-shadow: 0 0 5px black;
 }
 .project-card h4 {
     font-size: 19px;
@@ -88,6 +101,11 @@ nav ul li a {
     width: 80%;
     font-size: 18px;
 }
+.contact-form input:focus, .contact-form textarea:focus {
+    border: 0.2px solid var(--cyan);
+    box-shadow: 0 0 10px var(--cyan);
+    outline: none;
+}
 .contact-links {
     padding: 0px;
     display: flex;
@@ -102,7 +120,11 @@ nav ul li a {
     height: 80px;
     width: 80px;
     padding: 0 5px 20px;
-    
+
+}
+.contact-icon:hover {
+    transform: scale(110%)
 }
 
 
+/* media queries */
