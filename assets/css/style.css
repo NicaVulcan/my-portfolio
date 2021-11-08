@@ -14,6 +14,7 @@ h2 {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     width: 100%;
     color: var(--purple);
+    font-size: 27px;
 }
 
 
@@ -44,9 +45,6 @@ nav ul li a {
     font-size: 20px;
     color: white;
 }
-nav ul li:hover {
-    box-shadow: 0 0 5px black;
-}
 nav ul li:hover a {
     color: var(--cyan);
 }
@@ -54,7 +52,6 @@ nav ul li:hover a {
 
 /* about me style */
 .about-me div {
-    justify-content: center;
     text-align: center;
 }
 .avatar {
@@ -74,7 +71,8 @@ nav ul li:hover a {
     width: 100%;
 }
 .project-card a img:hover {
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px black;
+    transform: scale(100.2%);
 }
 .project-card h4 {
     font-size: 19px;
@@ -100,6 +98,7 @@ nav ul li:hover a {
 .contact-form input, .contact-form textarea {
     width: 80%;
     font-size: 18px;
+    font-family: inherit;
 }
 .contact-form input:focus, .contact-form textarea:focus {
     border: 0.2px solid var(--cyan);
@@ -134,8 +133,89 @@ form button:hover {
 
 }
 .contact-icon:hover {
-    transform: scale(110%)
+    -webkit-transform: scale(110%)
 }
 
 
 /* media queries */
+@media screen and (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        background-color: var(--purple);
+    }
+    nav ul li {
+        flex-grow: 1;
+    }
+    .about-me div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .about-me div div {
+        display: block;
+    }
+    .about-me div div h3 {
+        width: 70%;
+    }
+    .about-me div div p {
+        width: 80%;
+        margin: auto;
+    }
+    .my-work div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .project-card {
+        flex: 0 50%;
+    }
+    .project-card:first-of-type {
+        flex: 0 100%
+    }
+    .contact-form input, .contact-form textarea {
+        width: 60%;
+    }
+}   
+
+@media screen and (min-width: 980px) {
+    header {
+        display: flex;
+        background-color: var(--purple);
+        align-items: center;
+    }
+    h1{
+        flex: 3;
+        text-align: left;
+        padding-left: 30px;
+    }
+    header nav {
+        flex: 2;
+    }
+    nav ul {
+        flex: 1;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        width: 25%;
+    }
+    .about-me div {
+        width: 75%;
+        margin: auto;
+    }
+    .about-me div div h3 {
+        font-size: 29px;
+    }
+    .about-me div div p {
+        font-size: 22px;
+    }
+    .my-work div{
+        width: 80%;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .project-card {
+        flex: 0 48%;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 40%;
+    }
+}
