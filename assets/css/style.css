@@ -69,7 +69,6 @@ nav ul li:hover a {
 /* my work style */
 .project-card a img {
     width: 100%;
-    height: ;
 }
 .project-card a img:hover {
     box-shadow: 0 0 10px black;
