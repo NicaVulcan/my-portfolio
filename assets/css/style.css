@@ -133,6 +133,7 @@ form button:hover {
 
 }
 .contact-icon:hover {
+    transform: scale(110%);
     -webkit-transform: scale(110%)
 }
 
